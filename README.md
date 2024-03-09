@@ -33,3 +33,17 @@ Run the application during development.
 ```shell
 python main.py
 ```
+
+## Deploying the application
+
+Build the `docker` container.
+
+```shell
+docker build -t ghcr.io/olablachowiak/python-api .
+```
+
+Push the `docker` container.
+
+```shell
+docker push ghcr.io/olablachowiak/python-api
+```

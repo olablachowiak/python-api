@@ -1,2 +1,5 @@
 # Ignore virtual environment.
 venv/
+
+# Ignore pyton module cache.
+**/__pycache__/
