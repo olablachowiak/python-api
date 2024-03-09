@@ -47,3 +47,9 @@ Push the `docker` container.
 ```shell
 docker push ghcr.io/olablachowiak/python-api
 ```
+
+Run the `docker` container.
+
+```shell
+docker run -d --name python-api -p 5000:5000 ghcr.io/olablachowiak/python-api
+```
