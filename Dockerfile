@@ -15,4 +15,4 @@ COPY --from=builder /home/nonroot/.local/lib/python3.12/site-packages /home/nonr
 
 COPY main.py .
 
-ENTRYPOINT [ "hypercorn", "main:app", "--bind", "0.0.0.0:8080" ]
+ENTRYPOINT [ "python", "-m", "hypercorn", "main:app", "--bind", "0.0.0.0:5000" ]
